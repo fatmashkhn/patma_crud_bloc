@@ -19,14 +19,14 @@ class _AddProductFormState extends State<AddProductForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff0F172A),
+        backgroundColor: Color(0xffC2B8AF),
         appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.white),
+          iconTheme: IconThemeData(color: Colors.black54),
           title: Text(
             'Tambah Produk',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black54),
           ),
-          backgroundColor: Color(0xff0F172A),
+          backgroundColor: Color(0xffC2B8AF),
         ),
         body: SingleChildScrollView(
           child: Padding(
@@ -39,7 +39,7 @@ class _AddProductFormState extends State<AddProductForm> {
                   controller: _name,
                   decoration: InputDecoration(
                     labelText: 'Nama Produk',
-                    labelStyle: TextStyle(color: Colors.white),
+                    labelStyle: TextStyle(color: Colors.black54),
                   ),
                   style: TextStyle(color: Colors.white),
                 ),
@@ -48,18 +48,18 @@ class _AddProductFormState extends State<AddProductForm> {
                   controller: _description,
                   decoration: InputDecoration(
                     labelText: 'Deskripsi Produk',
-                    labelStyle: TextStyle(color: Colors.white),
+                    labelStyle: TextStyle(color: Colors.black54),
                   ),
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black54),
                 ),
                 SizedBox(height: 16),
                 TextFormField(
                   controller: _price,
                   decoration: InputDecoration(
                     labelText: 'Harga Produk',
-                    labelStyle: TextStyle(color: Colors.white),
+                    labelStyle: TextStyle(color: Colors.black54),
                   ),
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black54),
                 ),
                 SizedBox(height: 16),
                 ElevatedButton(
@@ -102,7 +102,7 @@ class _AddProductFormState extends State<AddProductForm> {
                   ),
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.blue),
+                        MaterialStateProperty.all<Color>(Color(0xffA9897A)),
                   ),
                 ),
               ],

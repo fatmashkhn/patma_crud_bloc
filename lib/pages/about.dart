@@ -21,7 +21,7 @@ class AboutPage extends StatelessWidget {
           children: [
             Center(
               child: Image.asset(
-                'images/logo-v2.png',
+                'assets/images/logo-v2.png',
                 height: 300,
                 width: 300,
               ),

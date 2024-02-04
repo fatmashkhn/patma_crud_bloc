@@ -13,7 +13,7 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff0F172A),
+        backgroundColor: Color(0xffC2B8AF),
         body: SingleChildScrollView(
           child: SafeArea(
             child: Column(
@@ -23,7 +23,7 @@ class ProductPage extends StatelessWidget {
                   alignment: Alignment.topCenter,
                   height: MediaQuery.of(context).size.height / 1.7,
                   decoration: BoxDecoration(
-                      color: Color(0xff0F172A),
+                      color: Color(0xffC2B8AF),
                       image: DecorationImage(
                           image: NetworkImage(this.product['image']))),
                   child: Padding(
@@ -86,14 +86,14 @@ class ProductPage extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 28,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.white),
+                                    color: Colors.black54),
                               ),
                               Text(
                                 "Rp. ${this.product['price']}",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.grey),
+                                    color: Colors.black45),
                               )
                             ]),
                       ),
@@ -122,8 +122,7 @@ class ProductPage extends StatelessWidget {
                       ),
                       Text(
                         this.product['description'],
-                        style: TextStyle(
-                            fontSize: 16, color: Colors.white.withOpacity(0.8)),
+                        style: TextStyle(fontSize: 16, color: Colors.black54),
                       ),
                       SizedBox(
                         height: 20,
@@ -143,12 +142,12 @@ class ProductPage extends StatelessWidget {
                             child: Container(
                               padding: EdgeInsets.all(18),
                               decoration: BoxDecoration(
-                                  color: Color(0xFF1E293B),
+                                  color: Color(0xFF8F857C),
                                   borderRadius: BorderRadius.circular(30)),
                               child: Icon(
                                 CupertinoIcons.delete,
                                 size: 22,
-                                color: Colors.red,
+                                color: Colors.black54,
                               ),
                             ),
                           ),
@@ -177,7 +176,7 @@ class ProductPage extends StatelessWidget {
                               padding: EdgeInsets.symmetric(
                                   vertical: 18, horizontal: 70),
                               decoration: BoxDecoration(
-                                  color: Colors.orange,
+                                  color: Color(0xffA9897A),
                                   borderRadius: BorderRadius.circular(30)),
                               child: Text(
                                 "Edit",

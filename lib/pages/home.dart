@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff0F172A),
+      backgroundColor: Color(0xffC2B8AF),
       body: SingleChildScrollView(
         child: SafeArea(
             child: Padding(
@@ -30,26 +30,26 @@ class HomePage extends StatelessWidget {
                     Container(
                       width: MediaQuery.of(context).size.width / 1.5,
                       decoration: BoxDecoration(
-                          color: Color(0xFF1E293B),
+                          color: Color(0xFFB5ABA2),
                           borderRadius: BorderRadius.circular(10)),
                       child: TextFormField(
                         decoration: InputDecoration(
                             label: Text(
                               "Find your product",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(color: Colors.black54),
                             ),
                             border: InputBorder.none,
                             prefixIcon: Icon(Icons.search,
-                                size: 30, color: Colors.grey)),
+                                size: 30, color: Colors.black54)),
                       ),
                     ),
                     Container(
                       padding: EdgeInsets.all(15),
                       decoration: BoxDecoration(
-                          color: Color(0xFF1E293B),
+                          color: Color(0xFFB5ABA2),
                           borderRadius: BorderRadius.circular(10)),
                       child: Icon(Icons.notifications_none,
-                          size: 30, color: Colors.grey),
+                          size: 30, color: Colors.black54),
                     ),
                   ],
                 ),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(30),
                   child: Image.asset(
-                    "assets/images/banner-rev1.png",
+                    "assets/images/banner.jpg",
                     width: MediaQuery.of(context).size.width / 1.2,
                     fit: BoxFit.contain,
                   ),
@@ -78,8 +78,8 @@ class HomePage extends StatelessWidget {
                               vertical: 10, horizontal: 18),
                           decoration: BoxDecoration(
                               color: cartList[i] == "All"
-                                  ? Color(0xff4338CA)
-                                  : Color(0xff1E293B),
+                                  ? Color(0xff82786F)
+                                  : Color(0xffC1AF9B),
                               borderRadius: BorderRadius.circular(18)),
                           child: Text(
                             cartList[i],
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                                 fontSize: 16,
                                 color: cartList[i] == 'All'
                                     ? Colors.white
-                                    : Colors.grey),
+                                    : Colors.black54),
                           )),
                   ]),
                 ),
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
         )),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff1E293B),
+        backgroundColor: Color(0xff766C63),
         iconSize: 30,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
@@ -150,10 +150,10 @@ class HomePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xff4338CA),
+        backgroundColor: Color(0xff82786F),
         child: Icon(
           Icons.camera,
-          color: Colors.grey,
+          color: Colors.white,
         ),
         onPressed: () {},
       ),

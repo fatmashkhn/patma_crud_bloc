@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff0F172A),
+      backgroundColor: Color(0xffC2B8AF),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -39,9 +39,9 @@ class LoginPage extends StatelessWidget {
                       decoration: InputDecoration(
                         labelText: 'Username',
                         labelStyle: TextStyle(color: Colors.white),
-                        prefixIcon: Icon(Icons.person, color: Colors.grey),
+                        prefixIcon: Icon(Icons.person, color: Colors.white),
                         filled: true,
-                        fillColor: Color(0xFF1E293B),
+                        fillColor: Color(0xFFB5ABA2),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -55,9 +55,9 @@ class LoginPage extends StatelessWidget {
                       decoration: InputDecoration(
                         labelText: 'Password',
                         labelStyle: TextStyle(color: Colors.white),
-                        prefixIcon: Icon(Icons.lock, color: Colors.grey),
+                        prefixIcon: Icon(Icons.lock, color: Colors.white),
                         filled: true,
-                        fillColor: Color(0xFF1E293B),
+                        fillColor: Color(0xFFB5ABA2),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
@@ -71,7 +71,7 @@ class LoginPage extends StatelessWidget {
                       },
                       style: ButtonStyle(
                         backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.blue),
+                            MaterialStateProperty.all<Color>(Color(0xffA9897A)),
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(

@@ -67,7 +67,7 @@ class ProductCard extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.w500,
-                      color: Colors.white),
+                      color: Colors.black87),
                 ),
                 SizedBox(
                   height: 5,
@@ -77,7 +77,7 @@ class ProductCard extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.w500,
-                      color: Colors.white.withOpacity(0.7)),
+                      color: Colors.black45),
                 )
               ],
             ),
